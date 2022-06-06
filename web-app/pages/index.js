@@ -2,11 +2,14 @@
 import { Contract, providers, utils, signer } from "ethers";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { abi, MY_CONTRACT_ADDRESS } from "../constants";
 
 export default function MyApp() {
 
   const ConnectToWallet = async () => {
     const provider = new providers.AlchemyProvider("rinkeby", "-MKh-62Yjr40C7oNdOLUQBRi4rqRpWEY") // network, apikey
+    const contractApi = new Contract(MY_CONTRACT_ADDRESS, abi, provider)
+    console.log(contractApi)
   }
 
   return (
@@ -28,7 +31,7 @@ export default function MyApp() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by echo Lee
+        Made with &#10084; by echo lee
       </footer>
     </div>
   )
