@@ -18,10 +18,24 @@
 
 </p>
 
-web3 contract project ,building for learn and share.
+This Project is build to learn Solidity
+Web3 contract project ,building for learn and share at the same time.
+
+## Used
+* react
+* ant design
+* hardhat
+* ethers.js
+* web3.js
+* next.js
+
+## Content
+* contract
+* website
+    * read set From contract demo
 
 ## Usage
-> npm run dev to start a dev page
+> npm run dev
 
 ## Install
 > npm install
